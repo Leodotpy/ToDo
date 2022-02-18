@@ -1,10 +1,9 @@
-# ToDo
-Members: Robert Cultraro, Leo Graziosi, Amr Alhamwi  
+# ToDo 
 Group Name: BEST Devs  
 
 Updated Description:  
 ToDo is an app that's purpose is to help users remember what they have scheduled.  It’s interface contains an editable list of entries for a user to jot down things to remember. Elements in the list can be added and removed with ease. You also have the ability to set deadlines for your tasks, so if your homework is due at 11:59 tonight, you’ll be able to set a deadline for homework at 11:59 on ToDo.  Also, each entry has a checkbox for checking after the user completes the task.  Saving functionality takes into account the completed entries as well in this list. May also include a built-in calendar that marks dates from the list. 
-Upon entering the app, the user will be greeted with a modern and sleek styled home screen, where they will be able to add their first ToDo entry. If the entry is mistyped or not to their liking, it can be easily deleted. As a part of adding the entry, the user also has the option to set a deadline for the task. This deadline will display alongside the task. The app also offers a calendar portion, where task deadlines are displayed in calendar format, with days when tasks due being highlighted (waiting for TA approval if this would make app too hard). Upon closing and reentering the app, the previous ToDo list has been preserved, so the user can close and reopen the app as many times as they want, and data will be saved.
+Upon entering the app, the user will be greeted with a modern and sleek styled home screen, where they will be able to add their first ToDo entry. If the entry is mistyped or not to their liking, it can be easily deleted. As a part of adding the entry, the user also has the option to set a deadline for the task. This deadline will display alongside the task. The app also offers a calendar portion, where task deadlines are displayed in calendar format, with days when tasks due being highlighted (waiting for TA approval if this would make app too hard). Upon closing and reentering the app, the previous ToDo list has been preserved, so the user can close and reopen the app as many times as they want, and data will be saved.  
 Functional Requirements (10-15):  
 Users can view their to-do list on their mobile android device  
 Users can select ToDo entries as complete or incomplete using checkboxes  
