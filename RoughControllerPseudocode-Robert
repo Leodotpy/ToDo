@@ -1,0 +1,62 @@
+class ToDoEntry()
+  name instance variable (string)
+  deadline instance variable (list of strings)
+  
+  Algorithm ToDoEntry(name, deadline)
+    monthlist[] = string list of all the months in a year
+    if name is not a string
+      throw exception //Note: figure out which one
+    else
+      this.name = name
+    if deadline is not in the format "(month) (day)" //figure out how to do this
+      throw exception
+    else
+      tempDeadline = deadline.split(" ", 2)
+    if tempDeadline[0] not in monthList
+      throw exception //Note: figure out which one
+    else
+      this.deadline = tempDeadline
+  
+  Algorithm setName (name)
+    //setter method for name
+    
+  Algorithm getName ()
+    //getter method for name
+    
+  Algorithm setDeadline (deadline)
+    //setter method for deadline. check for exception throws
+    if deadline is not in the format "(month) (day)" //figure out how to do this
+      throw exception
+    else
+      tempDeadline = deadline.split(" ", 2)
+    if tempDeadline[0] not in monthList
+      throw exception //Note: figure out which one
+    else
+      this.deadline = tempDeadline
+   
+  Algorithm getDeadline()
+    //getter method for deadline
+    
+-------------------------------------------------------------------------------------------------------------------------------------------------------   
+   
+class ToDoEntriesList()
+  entryList instance variable (list of ToDoEntry objects)
+  
+  Algorithm ToDoEntriesList()
+    this.entryList = new arrayList list
+    
+  Algorithm addEntry (name, deadline)
+    this.entryList.add(ToDoEntry(name, deadline))
+    
+  Algorithm removeEntry (name)
+    for every element (i) in entryList
+      if name == entryList[i].getName()
+        entryList.remove(entryList[i])
+        
+  Algorthm getEntryList()
+    return this.entryList
+       
+  Algorithm toString()
+    return entryList.toString()
+  
+  
