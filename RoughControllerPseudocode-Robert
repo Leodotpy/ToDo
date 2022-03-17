@@ -43,7 +43,7 @@ class ToDoEntriesList()
   entryList instance variable (list of ToDoEntry objects)
   
   Algorithm ToDoEntriesList()
-    this.entryList = new arrayList list
+    this.entryList = new arrayList object
     
   Algorithm addEntry (name, deadline)
     this.entryList.add(ToDoEntry(name, deadline))
@@ -57,6 +57,37 @@ class ToDoEntriesList()
     return this.entryList
        
   Algorithm toString()
-    return entryList.toString()
+    return this.entryList.toString()
   
+------------------------------------------------------------------------------------------------------------------------------------------------------
   
+class CompletedEntries()
+  completedEntriesInteger instance variable (integer)
+  completedList instance variable (list of ToDo entry objects)
+  
+  Algoritm CompletedEntries()
+    this.completedEntriesInteger = 0
+    this.completedList = new arrayList object
+    
+  Algorithm getCompletedEntriesInt()
+    //getter method for completedEntriesInteger
+  
+  Algorithm addEntry (entry)
+  pre-con: entry is a ToDoEntry object
+    this.completedList.add(entry)
+    this.completedEntriesInteger += 1
+  
+  Algorithm addEntry (name, deadline)
+    this.completedList.add(ToDoEntry(name, deadline))
+    this.completedEntriesInteger += 1
+    
+  Algorithm getCompletedList()
+    return this.completedList
+    
+  Algorithm toString()
+    return this.completedList.toString()
+ 
+ shouldnt be a need to remove entries since theyre completed but if i need it ill make it
+ 
+ --------------------------------------------------------------------------------------------------------------------------------------------------------
+    
