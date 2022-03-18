@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">ToDo</string>
-    <string name="welcome">Welcome to ToDo!</string>
+    <string name="welcome">Welcome to ToDo!!!!</string>
+    <string name="toggle_dark_mode">Toggle Dark Mode</string>
+    <string name="where_to">Where To?</string>
+    <string name="completed_entries">Completed Entries</string>
+    <string name="todo_list">ToDo List</string>
+    <string name="calender">Calendar</string>
 </resources>
