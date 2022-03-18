@@ -5,19 +5,28 @@
         <!-- Dark Theme. -->
         <item name="android:textColor">@color/textWhite</item>
 
-        <item name="colorButtonNormal">@color/buttonBlack</item>
-
         <item name="android:background">@color/backBlack</item>
+
+        <item name="android:textSize">20sp</item>
 
 
 
     </style>
 
     <style name="Theme.ToDo.Dark.Button" parent="Widget.AppCompat.Button.Colored">
-        <item name="colorButtonNormal">@color/textWhite</item>
-        <item name="android:colorButtonNormal">@color/textWhite</item>
+        <item name="android:colorButtonNormal">@color/buttonBlack</item>
         <item name="android:textColor">@color/textWhite</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">20sp</item>
+
     </style>
+
+    <style name="Theme.ToDo.Dark.Text" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColorLink">@color/backBlack</item>
+        <item name="android:textColorHighlight">@color/backBlack</item>
+    </style>
+
 
     <style name="Theme.ToDo.Light" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Primary brand color. -->
