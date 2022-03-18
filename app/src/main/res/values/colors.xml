@@ -8,11 +8,12 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="textWhite">#E4E4E4</color>
+    <color name="textWhite">#FFFFFF</color>
     <color name="backWhite">#E4E4E4</color>
 
+
     <color name="textBlack">#2B2B2B</color>
-    <color name="backBlack">#2B2B2B</color>
+    <color name="backBlack">#1B2122</color>
 
 
 </resources>
