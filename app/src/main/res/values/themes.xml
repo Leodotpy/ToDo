@@ -28,6 +28,16 @@
     </style>
 
 
+    <style name="Theme.ToDo.Dark.EntryText0" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/textWhite</item>
+        <item name="android:background">#DD7F7F</item>
+
+
+
+    </style>
+
+
     <style name="Theme.ToDo.Light" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
