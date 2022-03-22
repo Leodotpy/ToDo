@@ -1,4 +1,3 @@
-(Note: Utilize trimToSize() method)
 class ToDoEntry()
   name instance variable (string)
   deadline instance variable (list of strings)
@@ -53,6 +52,7 @@ class ToDoEntriesList()
     for every element (i) in entryList
       if name == entryList[i].getName()
         entryList.remove(entryList[i])
+    entryList.trimToSize()
         
   Algorthm getEntryList()
     return this.entryList
