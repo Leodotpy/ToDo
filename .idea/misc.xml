@@ -3,10 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/ABC/AndroidStudioProjects/ToDo/app/src/main/res/layout/activity_active_entries.xml" value="0.4466666666666667" />
-        <entry key="..\:/Users/ABC/AndroidStudioProjects/ToDo/app/src/main/res/layout/activity_completed_entries.xml" value="0.5380208333333333" />
-        <entry key="..\:/Users/ABC/AndroidStudioProjects/ToDo/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/ABC/AndroidStudioProjects/ToDo/app/src/main/res/layout/activity_navigation.xml" value="0.4273399014778325" />
+        <entry key="..\:/Users/ABC/AndroidStudioProjects/ToDo/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/ABC/AndroidStudioProjects/ToDo/app/src/main/res/layout/activity_navigation.xml" value="0.3" />
+        <entry key="..\:/Users/shizi/AndroidStudioProjects/ToDo/app/src/main/res/layout/activity_active_entries.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/shizi/AndroidStudioProjects/ToDo/app/src/main/res/layout/activity_completed_entries.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/shizi/AndroidStudioProjects/ToDo/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/shizi/AndroidStudioProjects/ToDo/app/src/main/res/layout/activity_navigation.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
