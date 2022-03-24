@@ -4,10 +4,7 @@ class ToDoEntry()
   
   Algorithm ToDoEntry(name, deadline)
     monthlist[] = string list of all the months in a year
-    if name is not a string
-      throw exception //Note: figure out which one
-    else
-      this.name = name
+    this.name = name
     if deadline is not in the format "(month) (day)" //figure out how to do this
       throw exception
     else
