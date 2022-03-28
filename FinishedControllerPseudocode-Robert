@@ -1,0 +1,170 @@
+class ToDoEntry()
+  name instance variable (string)
+  deadline instance variable (array of strings)
+  
+  Algorithm ToDoEntry(name, deadline)
+  pre-conditions: name arg is a string, deadline arg is a string in the format (Month, Day)
+  post-conditions: set default values for instance variables, if the date is invalid (does not exist), throw IllegalArgumentException
+    Input: two strings
+    Output: None
+    monthList[] = string list of all the months in a year
+    this.name = name
+    String[] tempDeadline = deadline.split(" ", 2)
+      try
+        if tempDeadline length is not equal to 2, then 
+          throw new IllegalArgumentException()
+        else
+          for every element (i) in monthList, do
+            if (tempDeadline[0].equals(monthList[i]) && Integer.parseInt(tempDeadline[1]) <= 31 && Integer.parseInt(tempDeadline[1]) > 0), then
+              this.deadline = tempDeadline
+            else
+              throw new IllegalArgumentException()
+              
+      catch (Exception e)
+        System.out.println("Deadline must be in the format (M D)")
+        System.out.println("Specified Month may not exist")
+        System.out.println("Specified Day may not exist")
+      finally
+            System.out.println("Please try again")
+  
+  Algorithm setName (name)
+  pre-conditions: name arg is a string
+  post-conditions: set new name value as given arg
+    Input: two strings
+    Output: None
+    this.name = name
+    
+  Algorithm getName ()
+  pre-conditions: current name value is a string
+  post-conditions: returns current name value
+    Input: None
+    Output: string
+    return name
+    
+  Algorithm setDeadline (deadline)
+  pre-conditions: deadline arg is a string in the format (Month, Day)
+  post-conditions: sets current deadline value to given arg, if the date is invalid (does not exist), throw IllegalArgumentException
+    Input: string
+    Output: None
+    monthList[] = string list of all the months in a year
+    String[] tempDeadline = deadline.split(" ", 2)
+      try
+        if tempDeadline length is not equal to 2, then 
+          throw new IllegalArgumentException()
+        else
+          for every element (i) in monthList, do
+            if (tempDeadline[0].equals(monthList[i]) && Integer.parseInt(tempDeadline[1]) <= 31 && Integer.parseInt(tempDeadline[1]) > 0), then
+              this.deadline = tempDeadline
+            else
+              throw new IllegalArgumentException()
+              
+      catch (Exception e)
+        System.out.println("Deadline must be in the format (M D)")
+        System.out.println("Specified Month may not exist")
+        System.out.println("Specified Day may not exist")
+      finally
+            System.out.println("Please try again")
+    
+  Algorithm getDeadline()
+  pre-conditions: current deadline value is an array of strings
+  post-conditions: returns current deadline value
+    Input: two strings
+    Output: None
+    return deadline
+    
+-------------------------------------------------------------------------------------------------------------------------------------------------------   
+   
+class ToDoEntriesList()
+  entryList instance variable (list of ToDoEntry objects)
+  
+  Algorithm ToDoEntriesList()
+  pre-conditions: None
+  post-conditions: sets default values to instance variables
+    Input: None
+    Output: None
+    this.entryList = new arrayList object
+    
+  Algorithm addEntry (name, deadline)
+  pre-conditions: name arg is a string, deadline arg is a string in the format (Month, Day)
+  post-conditions: adds a ToDoEntry object to entryList
+    Input: two strings
+    Output: None
+    this.entryList.add(ToDoEntry(name, deadline))
+    
+  Algorithm removeEntry (name)
+  pre-conditions: name is a string
+  post-conditions: checks if name arg is the name of a current entry, if it is, removes the entry from entryList, if its not, does nothing
+    Input: string
+    Output: None
+    for every element (i) in entryList, do
+      if name = entryList.get(i).getName(), then
+        entryList.remove(entryList.get(i))
+    entryList.trimToSize()
+        
+  Algorthm getEntryList()
+  pre-conditions: current entryList value is a list of ToDoEntry objects
+  post-conditions: returns current entryList value
+    Input: None
+    Output: list of ToDoEntry objects
+    return entryList
+       
+  Algorithm toString()
+  pre-conditions: current entryList value is a list of ToDoEntry objects
+  post-conditions: returns string value of entryList
+    Input: None
+    Output: string value of list of ToDoEntry objects
+    return this.entryList.toString()
+  
+------------------------------------------------------------------------------------------------------------------------------------------------------
+  
+class CompletedEntries()
+  completedEntriesInteger instance variable (integer)
+  completedList instance variable (list of ToDo entry objects)
+  
+  Algoritm CompletedEntries()
+  pre-conditions: None
+  post-conditions: sets default values to instance variables
+    Input: None
+    Output: None
+    this.completedEntriesInteger = 0
+    this.completedList = new arrayList object
+    
+  Algorithm getCompletedEntriesInt()
+  pre-conditions: current completedEntriesInteger value is an int
+  post-conditions: returns current completedEntriesInteger value
+    Input: None
+    Output: integer
+    return completedEntriesInteger
+  
+  Algorithm addEntry (entry)
+  pre-conditions: entry is a ToDoEntry object
+  post-conditions: adds a ToDoEntry object to completedList, then adds one to the completedEntriesInteger
+    Input: ToDoEntry object
+    Output: None
+    this.completedList.add(entry)
+    this.completedEntriesInteger += 1
+  
+  Algorithm addEntry (name, deadline)
+  pre-conditions: name is a string, deadline is a string in the format (Month, Day)
+  post-conditions: adds a ToDoEntry object to completedList using the given args, then adds one to the completedEntriesInteger
+    Input: two strings
+    Output: None
+    this.completedList.add(ToDoEntry(name, deadline))
+    this.completedEntriesInteger += 1
+    
+  Algorithm getCompletedList()
+  pre-conditions: current completedList value is a list of ToDoEntry objects
+  post-conditions: returns the current completedList
+    Input: None
+    Output: list of ToDoEntry objects
+    return this.completedList
+    
+  Algorithm toString()
+  pre-conditions: current completedList value is a list of ToDoEntry objects
+  post-conditions: returns string value of completedList
+    Input: None
+    Output: string value of list of ToDoEntry objects
+    return this.completedList.toString()
+ 
+ --------------------------------------------------------------------------------------------------------------------------------------------------------
+    
