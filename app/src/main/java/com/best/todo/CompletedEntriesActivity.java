@@ -12,7 +12,7 @@ public class CompletedEntriesActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_completed_entries);
-
+/**
         //backButton = findViewById(R.id.(insert button name here));
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -20,5 +20,6 @@ public class CompletedEntriesActivity extends Activity {
                 finish();
             }
         });
+ **/
     }
 }

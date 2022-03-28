@@ -17,18 +17,21 @@ public class ActiveEntries extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_active_entries);
-
-        //switchToNav = findViewById(R.id.(insert button name));
+/**
+        switchToNav = findViewById(R.id.(insert button name));
         switchToNav.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 switchToNavigation();
             }
         });
+ **/
     }
+
 
     private void switchToNavigation() {
         Intent switchActivityIntent = new Intent(this, Navigation.class);
         startActivity(switchActivityIntent);
     }
+
 }
