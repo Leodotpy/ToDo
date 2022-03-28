@@ -20,11 +20,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.best.todo.Navigation"
-            android:exported="false" />
+            android:name="com.best.todo.Navigation" />
         <activity
-            android:name="com.best.todo.MainActivity"
-            android:exported="true"/>
+            android:name="com.best.todo.ActiveEntries" />
+        <activity
+            android:name="com.best.todo.CompletedEntriesActivity" />
     </application>
 
 </manifest>
