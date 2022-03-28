@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <color name="red">#FF0000</color>
+    <color name="blue">#0040FF</color>
+
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
     <color name="textWhite">#FFFFFF</color>
     <color name="backWhite">#E4E4E4</color>
 
+    <color name="topBarLight">#A0AAB0</color>
+
 
     <color name="textBlack">#2B2B2B</color>
     <color name="backBlack">#1B2122</color>
     <color name="buttonBlack">#404B51</color>
+
+    <color name="topBarDark">#333A3E</color>
 
 
 </resources>
