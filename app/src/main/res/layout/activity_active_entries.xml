@@ -7,26 +7,47 @@
     android:theme="@style/Theme.ToDo"
     tools:context="com.best.todo.Navigation">
 
+    <!--ToDo Navigation Bar-->
+    <TableRow
+        android:id="@+id/topBar"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:background="@color/topBarDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/btnNav"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:background="@color/topBarDark"
+            app:srcCompat="@drawable/ic_nav_rec" />
+    </TableRow>
+
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="20dp"
-        android:text="ToDo List"
+        android:text="@string/todo_list"
+
+
         android:textAlignment="center"
-
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/topBar" />
 
     <LinearLayout
         android:id="@+id/entryLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="24dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,10 +61,11 @@
 
             <CheckBox
                 android:id="@+id/checkBox"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:width="2dp"
+                android:buttonTint="#FFFFFF"
                 android:textColor="#FFFFFF"
                 tools:visibility="visible" />
 
@@ -57,11 +79,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView"/>
-
-
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
         </LinearLayout>
-
 
 
     </LinearLayout>
