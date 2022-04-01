@@ -25,6 +25,8 @@
             android:name="com.best.todo.ActiveEntries" />
         <activity
             android:name="com.best.todo.CompletedEntriesActivity" />
+        <activity
+            android:name="com.best.todo.EntryCreator" />
     </application>
 
 </manifest>

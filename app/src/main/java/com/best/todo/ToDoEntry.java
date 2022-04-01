@@ -10,8 +10,8 @@ public class ToDoEntry {
         String[] monthList = {"january", "february", "march", "april", "may", "june", "july", "august",
                 "september", "october", "november", "december"};
         this.name = name;
-        String[] tempDeadline = deadline.split(" ", 2);
         try {
+            String[] tempDeadline = deadline.split(" ", 2);
             if (tempDeadline.length != 2) {
                 throw new IllegalArgumentException();
             } else {

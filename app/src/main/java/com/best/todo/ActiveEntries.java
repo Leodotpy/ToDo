@@ -1,21 +1,19 @@
 package com.best.todo;
 
-import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.best.todo.R;
 
-public class ActiveEntries extends AppCompatActivity {
+public class ActiveEntries extends Activity {
 
-    Button switchToNav;
-    Button switchToAddEntry;
+    ImageButton switchToNav;
+    ImageButton switchToAddEntry;
 
-    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
