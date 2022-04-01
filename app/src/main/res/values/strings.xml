@@ -8,9 +8,9 @@
     <string name="calender">Calendar</string>
     <string name="add_new_entry">Add New Entry</string>
     <string name="title">Title</string>
-    <string name="enter_entry_title">Enter entry title</string>
+    <string name="enter_entry_title">Enter Entry Title</string>
     <string name="cancel">Cancel</string>
     <string name="create_entry">Create Entry</string>
-    <string name="enter_completion_date_dd_mm">Enter Completion Date (M D) </string>
-    <string name="date">Date (M D) (M is the name of the month, D is a number)</string>
+    <string name="enter_completion_date_dd_mm">Enter Date </string>
+    <string name="date">Deadline/Start Date (Your Choice)</string>
 </resources>

@@ -107,7 +107,6 @@
             android:layout_height="wrap_content"
             android:autofillHints="name"
             android:ems="10"
-            android:inputType="date"
             android:minHeight="48dp"
             android:text="@string/enter_completion_date_dd_mm" />
 
