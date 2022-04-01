@@ -11,6 +11,6 @@
     <string name="enter_entry_title">Enter entry title</string>
     <string name="cancel">Cancel</string>
     <string name="create_entry">Create Entry</string>
-    <string name="enter_completion_date_dd_mm">Enter Completion Date (DD/MM)</string>
-    <string name="date">Date</string>
+    <string name="enter_completion_date_dd_mm">Enter Completion Date (M D) </string>
+    <string name="date">Date (M D) (M is the name of the month, D is a number)</string>
 </resources>

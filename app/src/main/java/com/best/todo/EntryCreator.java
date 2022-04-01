@@ -6,16 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class CompletedEntriesActivity extends Activity {
+public class EntryCreator extends Activity {
     Button backButton;
 
-    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_completed_entries);
+        setContentView(R.layout.entry_creator);
 
-        backButton = findViewById(R.id.btnNav);
+        backButton = findViewById(R.id.btnCancel);
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

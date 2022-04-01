@@ -23,7 +23,8 @@
             android:layout_width="58dp"
             android:layout_height="match_parent"
             android:background="@color/topBarDark"
-            app:srcCompat="@drawable/ic_nav_rec" />
+            app:srcCompat="@drawable/ic_nav_rec"
+            tools:ignore="SpeakableTextPresentCheck" />
     </TableRow>
 
 
@@ -93,6 +94,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/entryLayout"
-        app:srcCompat="@drawable/ic_plus" />
+        app:srcCompat="@drawable/ic_plus"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
