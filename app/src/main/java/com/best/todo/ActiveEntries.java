@@ -22,24 +22,27 @@ public class ActiveEntries extends Activity {
     private RecyclerView recyclerView;
     private ToDoAdapter adapter;
     private List<ToDoEntry> entryList;
-    private Database database;
+    private Database eDatabase;
+    private cmplDatabase ceDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_active_entries);
 
-        database = new Database(this);
-        database.openDatabase();
+        eDatabase = new Database(this);
+        eDatabase.openDatabase();
+        ceDatabase = new cmplDatabase(this);
+        ceDatabase.openDatabase();
         recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new ToDoAdapter(database,this);
+        adapter = new ToDoAdapter(eDatabase, ceDatabase, this);
         recyclerView.setAdapter(adapter);
 
         ItemTouchHelper swipeToDeleteFunction = new ItemTouchHelper(new SwipeToDelete(adapter));
         swipeToDeleteFunction.attachToRecyclerView(recyclerView);
 
-        entryList = database.getAllEntries();
+        entryList = eDatabase.getAllEntries();
         adapter.setEntries(entryList);
 
         switchToAddEntry = findViewById(R.id.btnAddEntry);
@@ -62,7 +65,7 @@ public class ActiveEntries extends Activity {
     @Override
     public void onResume() {
         super.onResume();
-        entryList = database.getAllEntries();
+        entryList = eDatabase.getAllEntries();
         adapter.setEntries(entryList);
         adapter.notifyDataSetChanged();
     }

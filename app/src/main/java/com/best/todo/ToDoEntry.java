@@ -9,6 +9,17 @@ public class ToDoEntry {
     int id;
     int status;
 
+    public ToDoEntry() {
+
+    }
+
+    public ToDoEntry(ToDoEntry other) {
+        this.name = other.name;
+        this.deadline = other.deadline;
+        this.id = other.id;
+        this.status = other.status;
+    }
+
     public int getStatus() {
         return status;
     }
