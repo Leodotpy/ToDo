@@ -8,12 +8,9 @@ Functional Requirements (10-15):
 Users can view their to-do list on their mobile android device  
 Users can select ToDo entries as complete or incomplete using checkboxes  
 Users can add and remove ToDo entries  
-Users can group and color code each ToDo entry based on the topic of their entries  
 The application automatically opens the last autosaved to-do list upon relaunching it  
-ToDo entries will display on calendar days, as the deadline for the task  
 The application has a modern and accessible appearance for enjoyable and efficient use of the app  
-If a task deadline is passed, users will be notified, and the task will be removed from the view  
 Once a task has been completed, it is moved to a “completed task area” where the checkbox will be checked off and it will not be visible from the main view  
 The completed task area and the calendar view will be accessible from a menu  
 Users will be able to see the total amount of tasks completed in the completed task area as an integer  
-Users will be able to switch between a “dark and light” mode, one with a white background and black text, the other with a dark background with white text. Colour coded entries will not change.  
+Users will be able to switch between a “dark and light” mode, one with a white background and black text, the other with a dark background with white text.
