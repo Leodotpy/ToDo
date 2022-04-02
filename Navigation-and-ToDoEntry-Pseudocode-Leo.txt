@@ -1,0 +1,99 @@
+Navigation.java
+
+class Navigation 
+pre-conditions: get switchButton, backButton, btnCompleted, darkToggleButton from navigation view
+	input: Button switchToCompletedEntries, Button backButton, ToggleButton darkToggleButton
+
+	
+	post-conditions: dark mode on page is toggled to button toggle value
+	IF toggleDarkButton is toggled
+		IF toggled on
+			set theme color to dark
+		ELSE toggled on
+			set theme color to dark
+		
+	
+	post-conditions: active page is switched to ToDo list active entries page
+	backButton <- btnList
+	IF backButton button is clicked
+		switch to active entries list page
+	
+	
+	post-conditions: active page is switched to ToDo list comepleted entries page
+	switchToCompletedEntries <- btnCompleted
+	IF switchToCompletedEntries button is clicked
+		switch to completed entries list page
+	
+	
+	
+
+
+ToDoEntry.java
+
+class ToDoEntry
+	input: String name, String deadline, int id, int status
+	
+	
+	post-conditions: this entry is set to other entry
+	algorithm ToDoEntry(ToDoEntry other)
+		this.name <- other.name
+		this.deadline <- other.deadline
+		this.id <- other.id
+		this.status <- other.status
+	
+	
+	post-conditions: entry status is returned
+	algorithm getStatus()
+		return status
+	
+	
+	post-conditions: entry status is set to inputted status
+	algorithm setStatus(int status)
+		input: status
+		
+		this.status <- status
+	
+	
+	post-conditions: entry id is returned
+	algorithm getId()
+		return id
+	
+	
+	post-conditions: entry id is set to inputted id
+	algorithm setStatus(int id)
+		input: id
+		
+		this.id <- id
+		
+	
+	post-conditions: entry name is returned
+	algorithm getName()
+		return name
+	
+	
+	post-conditions: entry name is set to inputted name
+	algorithm setName(String name)
+		input: name
+		
+		this.name <- name
+	
+	
+	post-conditions: entry deadline is returned
+	algorithm getDeadline()
+		return deadline
+	
+	
+	post-conditions: entry deadline is set to inputted deadline
+	algorithm setName(String deadline)
+		input: deadline
+		
+		this.deadline <- deadline
+	
+	
+	
+	
+	
+	
+
+
+
