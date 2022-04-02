@@ -51,7 +51,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_margin="32dp"
-        android:backgroundTint="@android:color/holo_purple"
+        android:backgroundTint="@color/buttonBlack"
         android:src="@drawable/ic_plus"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
