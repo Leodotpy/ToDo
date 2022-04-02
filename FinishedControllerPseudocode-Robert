@@ -1,4 +1,7 @@
-class ToDoEntry()
+
+(NOTE TO LEO: THIS CLASS (ToDoEntry) IS DIFFERENT FROM THE ACTUAL CODE CUZ I DID IT AWHILE AGO, GOOD LUCK SOLDIER)
+
+class ToDoEntry()   
   name instance variable (string)
   deadline instance variable (array of strings)
   
@@ -72,99 +75,4 @@ class ToDoEntry()
     Output: None
     return deadline
     
--------------------------------------------------------------------------------------------------------------------------------------------------------   
-   
-class ToDoEntriesList()
-  entryList instance variable (list of ToDoEntry objects)
-  
-  Algorithm ToDoEntriesList()
-  pre-conditions: None
-  post-conditions: sets default values to instance variables
-    Input: None
-    Output: None
-    this.entryList = new arrayList object
-    
-  Algorithm addEntry (name, deadline)
-  pre-conditions: name arg is a string, deadline arg is a string in the format (Month, Day)
-  post-conditions: adds a ToDoEntry object to entryList
-    Input: two strings
-    Output: None
-    this.entryList.add(ToDoEntry(name, deadline))
-    
-  Algorithm removeEntry (name)
-  pre-conditions: name is a string
-  post-conditions: checks if name arg is the name of a current entry, if it is, removes the entry from entryList, if its not, does nothing
-    Input: string
-    Output: None
-    for every element (i) in entryList, do
-      if name = entryList.get(i).getName(), then
-        entryList.remove(entryList.get(i))
-    entryList.trimToSize()
-        
-  Algorthm getEntryList()
-  pre-conditions: current entryList value is a list of ToDoEntry objects
-  post-conditions: returns current entryList value
-    Input: None
-    Output: list of ToDoEntry objects
-    return entryList
-       
-  Algorithm toString()
-  pre-conditions: current entryList value is a list of ToDoEntry objects
-  post-conditions: returns string value of entryList
-    Input: None
-    Output: string value of list of ToDoEntry objects
-    return this.entryList.toString()
-  
-------------------------------------------------------------------------------------------------------------------------------------------------------
-  
-class CompletedEntries()
-  completedEntriesInteger instance variable (integer)
-  completedList instance variable (list of ToDo entry objects)
-  
-  Algoritm CompletedEntries()
-  pre-conditions: None
-  post-conditions: sets default values to instance variables
-    Input: None
-    Output: None
-    this.completedEntriesInteger = 0
-    this.completedList = new arrayList object
-    
-  Algorithm getCompletedEntriesInt()
-  pre-conditions: current completedEntriesInteger value is an int
-  post-conditions: returns current completedEntriesInteger value
-    Input: None
-    Output: integer
-    return completedEntriesInteger
-  
-  Algorithm addEntry (entry)
-  pre-conditions: entry is a ToDoEntry object
-  post-conditions: adds a ToDoEntry object to completedList, then adds one to the completedEntriesInteger
-    Input: ToDoEntry object
-    Output: None
-    this.completedList.add(entry)
-    this.completedEntriesInteger += 1
-  
-  Algorithm addEntry (name, deadline)
-  pre-conditions: name is a string, deadline is a string in the format (Month, Day)
-  post-conditions: adds a ToDoEntry object to completedList using the given args, then adds one to the completedEntriesInteger
-    Input: two strings
-    Output: None
-    this.completedList.add(ToDoEntry(name, deadline))
-    this.completedEntriesInteger += 1
-    
-  Algorithm getCompletedList()
-  pre-conditions: current completedList value is a list of ToDoEntry objects
-  post-conditions: returns the current completedList
-    Input: None
-    Output: list of ToDoEntry objects
-    return this.completedList
-    
-  Algorithm toString()
-  pre-conditions: current completedList value is a list of ToDoEntry objects
-  post-conditions: returns string value of completedList
-    Input: None
-    Output: string value of list of ToDoEntry objects
-    return this.completedList.toString()
- 
- --------------------------------------------------------------------------------------------------------------------------------------------------------
-    
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
