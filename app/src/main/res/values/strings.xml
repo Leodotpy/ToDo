@@ -13,4 +13,5 @@
     <string name="create_entry">Create Entry</string>
     <string name="enter_completion_date_dd_mm">Enter Date </string>
     <string name="date">Deadline/Start Date (Your Choice)</string>
+    <string name="completed">Total Completed Entries: 0</string>
 </resources>

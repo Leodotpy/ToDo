@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -14,11 +15,13 @@ import java.util.List;
 
 public class CompletedEntriesActivity extends Activity {
     ImageButton backButton;
+    TextView completedEntries;
     private RecyclerView recyclerView;
     private CEAdapter adapter;
     private List<ToDoEntry> entryList;
     private cmplDatabase ceDatabase;
     private Database eDatabase;
+    int completedEntriesInteger;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,9 @@ public class CompletedEntriesActivity extends Activity {
 
         entryList = ceDatabase.getAllEntries();
         adapter.setEntries(entryList);
+        completedEntriesInteger = entryList.size();
+        completedEntries = findViewById(R.id.cmplEntriesInt);
+        completedEntries.setText("Total Completed Entries: " + completedEntriesInteger);
 
         backButton = findViewById(R.id.btnNav);
         backButton.setOnClickListener(new View.OnClickListener() {
@@ -51,6 +57,8 @@ public class CompletedEntriesActivity extends Activity {
         super.onResume();
         entryList = ceDatabase.getAllEntries();
         adapter.setEntries(entryList);
+        completedEntriesInteger = entryList.size();
+        completedEntries.setText("Total Completed Entries: " + completedEntriesInteger);
         adapter.notifyDataSetChanged();
     }
 
